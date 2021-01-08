@@ -35,7 +35,7 @@ Using D3 techniques , create a scatter plot that represents each state with circ
 
 Why make a static graphic when D3 lets you interact with your data?
 
-![animated-scatter](Images/7-animated-scatter.gif)
+![animated-scatter](Images/animated-scatter.gif)
 
 #### 1. More Data, More Dynamics
 
