@@ -77,8 +77,9 @@ d3.csv("./data/data.csv").then(function(censusData) {
   .text(d => d.abbr)
   .attr("x", d => xLinearScale(d.poverty))  
   .attr("y", d => yLinearScale(d.healthcare) + 3)  
-  .attr("font-size", "12px")
-  .attr("text-anchor", "middle")
+  .attr("class", "stateText")
+  .attr("font-size", "10px")
+  //.attr("text-anchor", "middle")
   .attr("fill", "#FFFFFF");
 
   // Initialize tool tip  
@@ -119,4 +120,6 @@ d3.csv("./data/data.csv").then(function(censusData) {
     .attr("value", "healthcare")
     .text("Lacks Healthcare (%)");
 
+}).catch(function(error) {
+  console.log(error);
 });
